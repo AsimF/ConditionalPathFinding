@@ -1,0 +1,47 @@
+import java.io.*;
+import java.util.*;
+
+public class PathFinder {
+
+	static Scanner in = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+	
+		while(true) {
+			
+			while(!in.hasNextInt()) {
+				System.out.println("Error, invalid input!");
+			    in.next();
+			}
+			
+			menu(in.nextInt());
+		}
+		
+	}
+	
+	public static void menu(int input) {
+		switch(input) {
+		case 1:
+			System.out.println("Engaging in finding shortest path with X constraint...");
+
+			break;
+		case 2:
+			System.out.println("Engaging in finding shortest path with Y constraint...");
+			
+			break;
+		case 3:
+			System.out.println("Engaging in finding shortest path with Z constraint...");
+			
+			break;
+		case 4:
+			System.out.println("Goodbye!");
+			System.exit(0);
+			break;
+		default:
+			System.out.println("Error! Enter a number in the range[1-4]!");
+			break;
+		}
+		return;
+	}
+	
+}

@@ -1,0 +1,8 @@
+/**
+ * 
+ * CLASS THAT CREATES A GRAPHMAP, LOADS IN CSV, PARSES IT TO ITS RESPECTIVE PARAMETERS
+ *
+ */
+public class GraphMap {
+
+}

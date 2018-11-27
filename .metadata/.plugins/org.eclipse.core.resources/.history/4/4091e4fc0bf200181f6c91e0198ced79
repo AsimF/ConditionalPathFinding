@@ -1,0 +1,31 @@
+import java.io.*;
+import java.util.*;
+
+/**
+ * 
+ * CLASS THAT CREATES A GRAPHMAP, LOADS IN CSV, PARSES IT TO ITS RESPECTIVE PARAMETERS
+ *
+ */
+public class GraphMap {
+	//define parameters here
+	public ArrayList<Vertice> V;
+	public ArrayList<Edge> E;
+	
+	//define constructors here
+	public GraphMap() {
+		this.loadGraph();
+	}
+	
+	//define methods here
+	public void loadGraph() {
+		//implement csv reader...
+	}
+	
+	//define inner classes here
+	class Vertice {
+		//vertice of a map piece
+	}
+	class Edge {
+		//edge of map pieces
+	}
+}

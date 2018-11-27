@@ -1,11 +1,58 @@
 import java.io.*;
 import java.util.*;
 
+/**
+ * @title Conditional Path Finder
+ * @authors Asim Fauzi, Austin Moore, Dylan Williams, James Fleisher, Michael Zedeker
+ * @class Algorithms - CSE464
+ * 
+ * ***THIS HOLDS OUR MAIN DRIVER TO EXECUTE TESTS ***
+ */
 public class PathFinder {
 
+	//NECESSARY VARIABLES
+	static Scanner in = new Scanner(System.in);
+	static GraphMap map = new GraphMap();
+	
+	//MAIN
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		//RUN MENU
+		while(true) {
+			System.out.println("MENU:\n__________\n1. shortest path by x\n2. shortest path by y\n" +
+							   "3. shortest path by z\n4. exit\n__________\n" +
+							   "Please Enter a number [1-4]:");
+			while(!in.hasNextInt()) {
+				System.out.println("Error, invalid input!");
+			    in.next();
+			}
+			menu(in.nextInt());
+		}
+		
 	}
-
+	
+	public static void menu(int input) {
+		switch(input) { //will define constraints (condition) later
+		case 1:
+			System.out.println("Engaging in finding shortest path with X constraint...\n");
+			Algorithms.findX(map);
+			break;
+		case 2:
+			System.out.println("Engaging in finding shortest path with Y constraint...\n");
+			Algorithms.findY(map);
+			break;
+		case 3:
+			System.out.println("Engaging in finding shortest path with Z constraint...\n");
+			Algorithms.findZ(map);
+			break;
+		case 4:
+			System.out.println("EXITING...");
+			System.exit(0);
+			break;
+		default:
+			System.out.println("Error! Enter a number in the range[1-4]!");
+			break;
+		}
+		return;
+	}
+	
 }

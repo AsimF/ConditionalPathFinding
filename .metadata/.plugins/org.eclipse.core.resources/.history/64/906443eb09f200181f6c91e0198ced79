@@ -1,0 +1,25 @@
+/**
+ * 
+ * CLASS THAT STORES THREE STATIC ALGORITHMS (CONDITION 1,2,3 SHORTEST PATH)
+ *
+ */
+public class Algorithms {
+
+	public static void findX(GraphMap map) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void findY(GraphMap map) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void findZ(GraphMap map) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	
+}
